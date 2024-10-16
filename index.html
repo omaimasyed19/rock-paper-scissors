@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="theme-toggle">
+            <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider round"></span>
+            </label>
+            <span id="theme-label">Dark Mode</span>
+        </div>
+        <div class="scoreboard">
+            <div class="score player-score">
+                <h2>Player</h2>
+                <p id="player-score">0</p>
+            </div>
+            <div class="score computer-score">
+                <h2>Computer</h2>
+                <p id="computer-score">0</p>
+            </div>
+        </div>
+        <div class="timer-container">
+            <div id="timer-bar"></div>
+            <p id="timer-text">10</p>
+        </div>
+        <div class="choices">
+            <button class="choice" id="rock" aria-label="Rock">🪨</button>
+            <button class="choice" id="paper" aria-label="Paper">📄</button>
+            <button class="choice" id="scissors" aria-label="Scissors">✂️</button>
+        </div>
+        <div id="result" class="result"></div>
+        <div class="game-controls">
+            <button id="restart" class="control-btn">Restart Game</button>
+            <button id="play-again" class="control-btn" style="display: none;">Play Again</button>
+        </div>
+        <div class="total-time">Total Time: <span id="total-time">00:00</span></div>
+    </div>
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to restart the game?</p>
+            <button id="confirm-restart">Yes</button>
+            <button id="cancel-restart">No</button>
+        </div>
+    </div>
+    <div id="battle-arena" class="battle-arena">
+        <div id="player-choice" class="battle-choice"></div>
+        <div id="computer-choice" class="battle-choice"></div>
+    </div>
+    <audio id="click-sound" src="sounds/click.mp3"></audio>
+    <audio id="win-sound" src="sounds/win.mp3"></audio>
+    <audio id="lose-sound" src="sounds/lose.mp3"></audio>
+    <audio id="draw-sound" src="sounds/draw.mp3"></audio>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Created by umyma syed</p>
+    </footer>
+    
+    <script defer src="script.js"></script>
+</body>
+</html>
