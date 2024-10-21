@@ -17,7 +17,6 @@ const playerChoice = document.getElementById('player-choice');
 const computerChoice = document.getElementById('computer-choice');
 const themeSwitch = document.getElementById('theme-switch');
 const themeLabel = document.getElementById('theme-label');
-
 const clickSound = document.getElementById('click-sound');
 const winSound = document.getElementById('win-sound');
 const loseSound = document.getElementById('lose-sound');
