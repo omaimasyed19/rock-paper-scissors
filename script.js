@@ -1,5 +1,6 @@
 const choices = ['rock', 'paper', 'scissors'];
 const emojis = { 'rock': '🪨', 'paper': '📄', 'scissors': '✂️' };
+
 const playerScore = document.getElementById('player-score');
 const computerScore = document.getElementById('computer-score');
 const result = document.getElementById('result');
